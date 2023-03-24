@@ -1,0 +1,10 @@
+apiVersion: config.ocm.software/v1alpha1
+kind: ConfigData
+metadata:
+  name: backend-config
+localization:
+  - name: image
+    file: ./backend-chart/values.yaml
+    image: image.repository
+    resource:
+      name: image

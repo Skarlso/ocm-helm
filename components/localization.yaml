@@ -1,0 +1,22 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: Localization
+metadata:
+  name: ocm-with-helm-localized
+  namespace: ocm-system
+spec:
+  interval: 1m0s
+  componentVersionRef:
+    name: ocm-with-helm
+    namespace: ocm-system
+  source:
+    sourceRef:
+      kind: Snapshot
+      name: ocm-with-helm-snapshot-deployment
+      namespace: ocm-system
+  configRef:
+    resource:
+      resourceRef:
+        name: backend-app-config
+  snapshotTemplate:
+    name: ocm-with-helm-deployment-localized
+    createFluxSource: true

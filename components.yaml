@@ -1,0 +1,25 @@
+components:
+- name: github.com/skarlso/backend-application-helm
+  version: "v1.0.0"
+  provider:
+    name: skarlso.org
+  resources:
+  - name: backend-app-chart
+    type: helmChart
+    version: "v1.0.0"
+    input:
+      type: helm
+      path: ./backend-chart
+  - name: backend-app-config
+    type: PlainText
+    version: "v1.0.0"
+    input:
+     type: file
+     path: "backend-config.yaml"
+     compress: true
+  - name: backend-app-image
+    type: ociImage
+    version: "v1.1.0"
+    access:
+      type: ociArtifact
+      imageReference: skarlso/database-app
