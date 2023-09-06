@@ -5,7 +5,7 @@ metadata:
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: github.com/skarlso/backend-application-helm
+  component: github.com/skarlso/podinfo-helm
   version:
     semver: 1.0.0
   repository:

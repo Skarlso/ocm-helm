@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: podinfo
+  namespace: ocm-system
+spec:
+  interval: 5m0s
+  url: oci://registry.ocm-system.svc.cluster.local:5000/sha-13842122539318016385
+  type: "oci"
+  certSecretRef:
+    name: ocm-registry-tls-certs

@@ -4,11 +4,11 @@ metadata:
   name: ocm-with-helm-deployment
   namespace: ocm-system
 spec:
-  interval: 10m0s
-  componentVersionRef:
+  interval: 10m
+  sourceRef:
+    kind: ComponentVersion
     name: ocm-with-helm
     namespace: ocm-system
-  resource:
-    name: backend-app-chart
-  snapshotTemplate:
-    name: ocm-with-helm-snapshot-deployment
+    resourceRef:
+      name: charts
+      version: 6.3.5
