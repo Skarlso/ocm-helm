@@ -11,7 +11,7 @@ spec:
   helmReleaseTemplate:
     chart:
       spec:
-        chart: charts
+        chart: podinfo
         version: 6.3.5
     interval: 5m
 

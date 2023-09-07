@@ -1,5 +1,5 @@
 components:
-- name: github.com/skarlso/podinfo-helm-2
+- name: github.com/skarlso/podinfo-helm
   version: "v1.0.0"
   provider:
     name: skarlso.org
