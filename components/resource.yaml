@@ -12,3 +12,5 @@ spec:
     resourceRef:
       name: charts
       version: 6.3.5
+      extraIdentity:
+        helmChart: podinfo

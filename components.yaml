@@ -1,8 +1,8 @@
 components:
-- name: github.com/skarlso/podinfo-helm
+- name: github.com/open-component-model/helm-test
   version: "v1.0.0"
   provider:
-    name: skarlso.org
+    name: ocm.software
   resources:
   - name: charts
     type: helmChart

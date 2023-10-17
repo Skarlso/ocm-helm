@@ -1,1 +1,1 @@
-{"schemaVersion":1,"artifacts":[{"repository":"component-descriptors/github.com/skarlso/podinfo-helm-2","tag":"v1.0.0","digest":"sha256:a7c0bb51ec37f71c71577f2b9db061b2a6d7de6a35ea92dd36e0c90afe965452"}]}
+{"schemaVersion":1,"artifacts":[{"repository":"component-descriptors/github.com/open-component-model/helm-test","tag":"v1.0.0","digest":"sha256:cec8da0892eb88f463dc6703ca25fdc013762655313ae6cbf7ae7883d807fabd"}]}
