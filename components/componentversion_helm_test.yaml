@@ -5,10 +5,10 @@ metadata:
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: github.com/skarlso/helm-test
+  component: github.com/open-component-model/helm-test
   version:
-    semver: 1.0.0
+    semver: 1.0.3
   repository:
-    url: ghcr.io/skarlso
+    url: ghcr.io/skarlso/helm-test
     secretRef:
       name: creds

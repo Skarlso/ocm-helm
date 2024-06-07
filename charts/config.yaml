@@ -1,0 +1,17 @@
+apiVersion: config.ocm.software/v1alpha1
+kind: ConfigData
+metadata:
+  name: ocm-config
+configuration:
+  defaults:
+    replicas: 1
+  rules:
+  - value: (( replicas ))
+    file: podinfo/values.yaml
+    path: replicaCount
+  schema:
+    type: object
+    additionalProperties: false
+    properties:
+      replicas:
+        type: integer

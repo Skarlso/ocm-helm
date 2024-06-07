@@ -12,5 +12,5 @@ spec:
     kind: ComponentVersion
     name: podinfo-pipeline
     resourceRef:
-      name: backend-app-config
+      name: config
       version: 1.0.0

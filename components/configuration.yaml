@@ -1,0 +1,20 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: Configuration
+metadata:
+  name: ocm-with-helm-configured
+  namespace: ocm-system
+spec:
+  interval: 1m
+  sourceRef:
+    kind: Resource
+    name: ocm-with-helm-deployment
+  configRef:
+    kind: ComponentVersion
+    name: ocm-with-helm
+    resourceRef:
+      name: config
+      version: 1.0.3
+      extraIdentity:
+        chartVersion: 6.3.5
+  values:
+    replicas: 2

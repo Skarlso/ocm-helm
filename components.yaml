@@ -1,6 +1,6 @@
 components:
 - name: github.com/open-component-model/helm-test
-  version: "v1.0.0"
+  version: "v1.0.3"
   provider:
     name: ocm.software
   resources:
@@ -11,3 +11,9 @@ components:
       type: helm
       version: 6.3.5
       path: charts/podinfo-6.3.5.tgz
+  - name: config
+    type: file
+    input:
+      type: file
+      path: charts/config.yaml
+      compress: true
